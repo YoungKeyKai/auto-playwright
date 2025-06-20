@@ -4,6 +4,8 @@
     "hono": "^3.9.2",
     "openai": "^4.17.3",
     "sanitize-html": "^2.11.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
     "zod": "^3.22.4"
   },
   "author": {
@@ -44,9 +46,7 @@
     "@types/sanitize-html": "^2.9.4",
     "knip": "^2.41.0",
     "prettier": "^2.8.8",
-    "semantic-release": "^21.0.2",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.3"
+    "semantic-release": "^21.0.2"
   },
   "scripts": {
     "start": "tsx ./tests/bin/startServer.ts",
