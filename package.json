@@ -15,6 +15,7 @@
   "files": [
     "dist"
   ],
+  "main": "./dist/index.js",
   "homepage": "https://ray.run",
   "keywords": [
     "openai",
@@ -30,13 +31,12 @@
     ]
   },
   "types": "./dist/index.d.ts",
-  "name": "@seyacat/auto-playwright",
-  "main": "./dist/index.js",
+  "name": "@youngkeykai/auto-playwright",
   "sideEffects": false,
   "description": "Automate Playwright tests using ChatGPT.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seyacat/auto-playwright"
+    "url": "https://github.com/YoungKeyKai/auto-playwright"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
