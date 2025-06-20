@@ -50,7 +50,7 @@
   },
   "scripts": {
     "start": "tsx ./tests/bin/startServer.ts",
-    "build": "tsc --project tsconfig.build.json",
+    "prepare": "tsc --project tsconfig.build.json",
     "format": "prettier --write ./src",
     "lint": "prettier --check ./src && knip",
     "semantic-release": "semantic-release",
