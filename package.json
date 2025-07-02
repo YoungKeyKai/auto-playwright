@@ -3,6 +3,7 @@
     "@hono/node-server": "1.14.1",
     "hono": "4.7.7",
     "openai": "4.96.0",
+    "playwright": "1.52.0",
     "sanitize-html": "2.16.0",
     "zod": "3.24.3"
   },
@@ -15,7 +16,6 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
   "homepage": "https://ray.run",
   "keywords": [
     "openai",
@@ -30,13 +30,13 @@
       "main"
     ]
   },
-  "types": "./dist/index.d.ts",
-  "name": "@youngkeykai/auto-playwright",
+  "name": "auto-playwright",
+  "main": "./src/index.ts",
   "sideEffects": false,
   "description": "Automate Playwright tests using ChatGPT.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YoungKeyKai/auto-playwright"
+    "url": "https://github.com/lucgagan/auto-playwright"
   },
   "devDependencies": {
     "@playwright/test": "1.52.0",
@@ -51,11 +51,10 @@
   "scripts": {
     "start": "tsx ./tests/bin/startServer.ts",
     "build": "tsc --project tsconfig.build.json",
-    "prepare" : "npm run build",
     "format": "prettier --write ./src",
     "lint": "prettier --check ./src && knip",
     "semantic-release": "semantic-release",
     "test": "playwright test"
   },
-  "version": "0.0.1-development"
+  "version": "0.0.0-development"
 }
